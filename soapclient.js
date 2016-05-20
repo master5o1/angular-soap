@@ -94,7 +94,6 @@ SOAPClientParameters._serialize = function(o)
                             case "Date":
                                 type = "DateTime"; break;
                         }
-                        console.log('soapclient:type', type);
                         s += "<" + type + ">" + SOAPClientParameters._serialize(o[p]) + "</" + type + ">"
                     }
                     else    // associative array
